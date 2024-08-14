@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+ font-family: Poppins;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .accordion {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: 30px 90px 30px;
+    box-sizing: border-box;
+    color: #0E1C4E;
+  }
+  
+  .accordion h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .accordion p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0E1C4E;
+  }
+  
+  .accordion-item {
+    border-left: 5px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 2em ;
+  }
+  
+  .first{
+    border-left: 5px solid #f38d3c;
+    background-color: #ffedd5 ;
+    }
+
+    .second{
+        border-left: 5px solid #7a9afa;
+        background-color: #e0e7ff ;
+    }
+    .third{
+        border-left: 5px solid #a78bfa;
+        background-color: #edeaff ;
+    }
+    .fourth{
+        border-left: 5px solid #f472b6;
+        background-color: #fce7f3;
+    }
+    .fifth{
+        border-left: 5px solid #4ade80;
+        background-color: #f1fdf5;
+    }
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .accordion-header:hover {
+    color: #000;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .accordion-content p {
+    padding: 0 0 15px;
+  }
+  
+  .accordion-item.active .accordion-content {
+    max-height: 200px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .accordion {
+      padding: 15px;
+    }
+  
+    .accordion h2 {
+      font-size: 20px;
+    }
+  
+    .accordion-header {
+      font-size: 16px;
+    }
+  
+    .accordion-content {
+      font-size: 14px;
+    }
+  }
+  
